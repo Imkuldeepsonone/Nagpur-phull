@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fresh flowers for Nagpur's retailers, florists, decorators, temples and bulk buyers. Wholesale enquiries and daily availability.">
+<meta name="theme-color" content="#173f32">
+<title>Nagpur Flower Hub | Fresh Flowers. Reliable Wholesale.</title>
+<style>
+:root{--green:#173f32;--green2:#245b46;--cream:#fbf8f0;--ink:#1f2a24;--muted:#68736c;--gold:#d9a441;--line:#e8e4d9;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(251,248,240,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:850;color:var(--green);letter-spacing:-.5px}.brand-mark{width:42px;height:42px;border-radius:14px;background:var(--green);color:white;display:grid;place-items:center;font-size:23px}.brand small{display:block;font-size:10px;letter-spacing:2px;color:var(--muted);font-weight:700}.navlinks{display:flex;gap:25px;align-items:center;font-size:14px;font-weight:650}.navlinks a:hover{color:var(--green2)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 20px;font-weight:750;background:var(--green);color:#fff;border:1px solid var(--green);transition:.2s}.nav-cta:hover,.btn:hover{background:var(--green2);transform:translateY(-1px)}.btn.secondary{background:transparent;color:var(--green);border-color:#9cae9f}
+.hero{padding:76px 0 64px;background:radial-gradient(circle at 80% 20%,#f0e4c8 0,transparent 32%),linear-gradient(120deg,#fbf8f0 40%,#f4efe3)}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--green2);font-weight:800;font-size:12px;letter-spacing:1.7px;text-transform:uppercase}.dot{width:8px;height:8px;border-radius:50%;background:var(--gold)}h1{font-size:clamp(42px,5.5vw,68px);line-height:1.04;letter-spacing:-2.8px;color:var(--green);margin:18px 0}.hero p{font-size:18px;color:var(--muted);max-width:570px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-note{font-size:12px!important;margin-top:20px;color:#778078!important}.hero-photo{position:relative;min-height:440px;border-radius:30px;overflow:hidden;background:#d9e1d5;box-shadow:0 24px 70px #263b2a22}.hero-photo img{width:100%;height:100%;min-height:440px;object-fit:cover;display:block}.photo-tag{position:absolute;bottom:22px;left:22px;background:#fffef8ee;padding:13px 17px;border-radius:15px;color:var(--green);font-weight:800;box-shadow:0 8px 25px #0002}.section{padding:78px 0}.section.white{background:#fff}.section-head{max-width:660px;margin-bottom:34px}.section-head h2{font-size:clamp(30px,4vw,43px);line-height:1.12;letter-spacing:-1.3px;color:var(--green);margin:10px 0}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.flower-card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.2s}.flower-card:hover{transform:translateY(-4px);box-shadow:0 16px 35px #263b2a12}.flower-card img{width:100%;height:190px;object-fit:cover;display:block;background:#e9e7df}.flower-info{padding:18px}.flower-info h3{margin:0;color:var(--green);font-size:20px}.flower-info p{margin:5px 0 0;color:var(--muted);font-size:14px}.pill{display:inline-block;margin-top:12px;padding:5px 10px;border-radius:999px;background:#f2f5ee;color:var(--green2);font-size:11px;font-weight:800}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}.split img{width:100%;height:390px;object-fit:cover;border-radius:26px}.checks{display:grid;gap:15px;margin:24px 0}.check{display:flex;gap:12px;align-items:flex-start}.check b{display:block;color:var(--green)}.check span{color:var(--muted);font-size:14px}.check-icon{width:28px;height:28px;flex:none;border-radius:50%;display:grid;place-items:center;background:#e9f0e6;color:var(--green);font-weight:900}
+.audience{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.aud{background:#f7f5ee;border:1px solid var(--line);border-radius:16px;padding:20px}.aud strong{display:block;color:var(--green);font-size:16px}.aud span{font-size:13px;color:var(--muted)}
+.order-band{background:var(--green);color:white;border-radius:28px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:25px}.order-band h2{font-size:clamp(28px,4vw,40px);line-height:1.12;margin:0 0 8px}.order-band p{margin:0;color:#d8e4da}.order-band .btn{background:#fff;color:var(--green);border-color:#fff;white-space:nowrap}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:760px}label{font-size:13px;font-weight:750;color:var(--green)}input,select,textarea{display:block;width:100%;margin-top:6px;padding:13px 14px;border:1px solid #dcded5;border-radius:12px;background:#fff;font:inherit;color:var(--ink)}textarea{min-height:110px;resize:vertical}.full{grid-column:1/-1}.form-help{font-size:12px;color:var(--muted)}
+footer{background:#102d24;color:#e8eee8;padding:42px 0 25px}.foot{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.foot p,.foot small{color:#b7c7bc}.foot-brand{font-size:20px;font-weight:850}.foot-bottom{border-top:1px solid #ffffff22;margin-top:28px;padding-top:18px;font-size:12px;color:#b7c7bc}
+.mobile-menu{display:none}
+@media(max-width:800px){.navlinks{display:none}.hero{padding:48px 0}.hero-grid,.split{grid-template-columns:1fr;gap:28px}.hero-photo,.hero-photo img{min-height:310px}.cards{grid-template-columns:repeat(2,1fr)}.audience{grid-template-columns:repeat(2,1fr)}.section{padding:58px 0}.order-band{padding:30px;display:block}.order-band .btn{margin-top:20px}}
+@media(max-width:520px){.cards,.audience{grid-template-columns:1fr}.flower-card img{height:210px}h1{letter-spacing:-1.8px}.hero p{font-size:16px}.nav{height:66px}form{grid-template-columns:1fr}.full{grid-column:auto}.order-band{border-radius:20px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="brand-mark">✿</span><span>NAGPUR FLOWER HUB<small>FRESHNESS • WHOLESALE • TRUST</small></span></a>
+<nav class="navlinks"><a href="#flowers">Flowers / फुले</a><a href="#about">About / आमच्याविषयी</a><a href="#buyers">Buyers / ग्राहक</a><a href="#contact">Contact / संपर्क</a></nav>
+<div style="display:flex;align-items:center;gap:10px"><button type="button" class="nav-cta" id="langToggle" style="cursor:pointer">मराठी / English</button><a class="nav-cta" href="#contact">Wholesale Enquiry ↗</a></div>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><div class="eyebrow"><span class="dot"></span> NAGPUR, MAHARASHTRA</div>
+<h1>Fresh flowers.<br>Reliable wholesale.<br><span style="font-size:.58em;letter-spacing:-1px">ताजी फुले. विश्वासार्ह घाऊक पुरवठा.</span></h1>
+<p>Your wholesale flower sourcing partner for retailers, florists, decorators, temples and event businesses across Nagpur.<br><span lang="mr">नागपूरमधील फुलविक्रेते, फ्लोरिस्ट, सजावट व्यावसायिक, मंदिरे आणि कार्यक्रम आयोजकांसाठी घाऊक फुलांचा पुरवठा.</span></p>
+<div class="actions"><a class="btn" id="heroCta" href="#contact">Enquire for Bulk Orders ↗</a><a class="btn secondary" id="heroExplore" href="#flowers">Explore Flowers</a></div>
+<p class="hero-note">Daily availability and prices are shared on enquiry. Product supply is subject to season and stock.</p>
+</div>
+<div class="hero-photo"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1200&q=85" alt="Fresh colourful flowers"><div class="photo-tag">🌼 Wholesale flower supply</div></div>
+</div></section>
+
+<section class="section white" id="flowers"><div class="wrap">
+<div class="section-head"><div class="eyebrow"><span class="dot"></span> OUR FLOWER RANGE</div><h2>Flowers for every occasion and customer. <span lang="mr">प्रत्येक प्रसंगासाठी फुले.</span></h2><p id="flowersDesc">Ask us for today's availability, grade, bundle size and wholesale quotation.</p></div>
+<div class="cards">
+<article class="flower-card"><img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=800&q=80" alt="Yellow marigold flowers"><div class="flower-info"><h3>Marigold <span>झेंडू</span></h3><p>For garlands, temples, retailers and decoration.</p><span class="pill">BULK ENQUIRIES</span></div></article>
+<article class="flower-card"><img src="https://images.unsplash.com/photo-1548586196-aa5803b77379?auto=format&fit=crop&w=800&q=80" alt="Fresh roses"><div class="flower-info"><h3>Rose <span>गुलाब</span></h3><p>For florists, bouquets, gifting and events.</p><span class="pill">BULK ENQUIRIES</span></div></article>
+<article class="flower-card"><img src="https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=800&q=80" alt="White jasmine flowers"><div class="flower-info"><h3>Jasmine <span>मोगरा</span></h3><p>For garland makers, temples and retailers.</p><span class="pill">SEASONAL AVAILABILITY</span></div></article>
+<article class="flower-card"><img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=800&q=80" alt="Chrysanthemum flowers"><div class="flower-info"><h3>Chrysanthemum <span>शेवंती</span></h3><p>For retail counters, decoration and events.</p><span class="pill">BULK ENQUIRIES</span></div></article>
+<article class="flower-card"><img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=800&q=80" alt="Gerbera flowers"><div class="flower-info"><h3>Gerbera <span>जरबेरा</span></h3><p>Selected flowers for florists and decorators.</p><span class="pill">GRADE-BASED SUPPLY</span></div></article>
+<article class="flower-card"><img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=800&q=80" alt="White tuberose flowers"><div class="flower-info"><h3>Tuberose <span>निशिगंध</span></h3><p>For temples, retailers and event suppliers.</p><span class="pill">SEASONAL AVAILABILITY</span></div></article>
+</div>
+</div></section>
+
+<section class="section" id="about"><div class="wrap split">
+<img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=1100&q=85" alt="Flower market with fresh flowers">
+<div><div class="eyebrow"><span class="dot"></span> OUR APPROACH</div><div class="section-head"><h2 id="aboutTitle">Closer sourcing. Careful handling. Dependable supply.</h2><p>We are building a flower distribution network connecting growers with wholesale buyers in Nagpur.<br><span lang="mr">नागपूरमधील उत्पादक शेतकरी आणि घाऊक ग्राहक यांना जोडणारे वितरण जाळे आम्ही उभारत आहोत.</span></p></div>
+<div class="checks">
+<div class="check"><div class="check-icon">✓</div><div><b>Direct farmer relationships</b><span>Developing supplier connections in Nagpur and nearby growing areas.</span></div></div>
+<div class="check"><div class="check-icon">✓</div><div><b>Sorting and grading</b><span>Orders can be discussed by flower type, quality and quantity.</span></div></div>
+<div class="check"><div class="check-icon">✓</div><div><b>Order-led procurement</b><span>Procurement planning based on confirmed demand and stock availability.</span></div></div>
+</div><a class="btn" href="#contact">Discuss Your Requirement ↗</a>
+</div></div></section>
+
+<section class="section white" id="buyers"><div class="wrap">
+<div class="section-head"><div class="eyebrow"><span class="dot"></span> WHO WE SUPPLY</div><h2>Built for wholesale buyers. <span lang="mr">घाऊक ग्राहकांसाठी.</span></h2><p>Tell us what you need, how much you need and when you need it. We will confirm availability and quotation.</p></div>
+<div class="audience">
+<div class="aud">🌺 <strong>Flower retailers</strong><span>Regular wholesale replenishment</span></div>
+<div class="aud">💐 <strong>Florists</strong><span>Selected flowers and grades</span></div>
+<div class="aud">🎊 <strong>Decorators</strong><span>Bulk and event-wise requirements</span></div>
+<div class="aud">🛕 <strong>Temples</strong><span>Routine flower requirements</span></div>
+<div class="aud">🌼 <strong>Garland makers</strong><span>Marigold and jasmine enquiries</span></div>
+<div class="aud">💍 <strong>Event suppliers</strong><span>Planned wedding and function orders</span></div>
+</div>
+</div></section>
+
+<section class="section"><div class="wrap"><div class="order-band"><div><h2>Need today's wholesale flower rates? <span lang='mr'>आजचे घाऊक फुलांचे दर हवे आहेत?</span></h2><p>Send your flower list and required quantity. We'll confirm availability and pricing.</p></div><a class="btn" href="#contact">Request a Quotation ↗</a></div></div></section>
+
+<section class="section white" id="contact"><div class="wrap">
+<div class="section-head"><div class="eyebrow"><span class="dot"></span> CONTACT & WHOLESALE ENQUIRIES</div><h2>Let's plan your next order. <span lang='mr'>तुमची पुढील ऑर्डर नियोजित करूया.</span></h2><p>Submit your requirement. Your enquiry will open directly in WhatsApp.</p></div>
+<form id="enquiry">
+<label>Your name / तुमचे नाव<input id="name" required placeholder="Name"></label>
+<label>Business type / व्यवसायाचा प्रकार<select id="type"><option>Flower retailer</option><option>Florist</option><option>Decorator / Event supplier</option><option>Temple</option><option>Garland maker</option><option>Other bulk buyer</option></select></label>
+<label>Flower required / आवश्यक फुले<input id="flower" required placeholder="e.g. Marigold, Rose"></label>
+<label>Quantity / प्रमाण<input id="qty" required placeholder="e.g. 20 kg / 50 bundles"></label>
+<label class="full">Delivery area / requirement / वितरणाचे ठिकाण<textarea id="message" placeholder="Area in Nagpur, required date/time, grade or other details"></textarea></label>
+<div class="full"><button class="btn" type="submit">Prepare WhatsApp Enquiry / WhatsApp चौकशी ↗</button><p class="form-help">No payment is collected on this website. Orders are confirmed only after availability, price and delivery are agreed.</p></div>
+</form>
+</div></section>
+</main>
+<footer><div class="wrap"><div class="foot"><div><div class="foot-brand">✿ NAGPUR FLOWER HUB</div><p>Fresh flower wholesale distribution<br>Nagpur, Maharashtra, India</p></div><div><b>Wholesale enquiries</b><p>Phone / WhatsApp: 9518519781<br>Nagpur, Maharashtra</p></div><div><b>Business hours</b><p>Early-morning wholesale operations<br>Timings to be confirmed</p></div></div><div class="foot-bottom">© <span id="year"></span> Nagpur Flower Hub. All rights reserved. <br>Business name, contact details, operating address and actual availability must be verified before publishing.</div></div></footer>
+
+
+<script>
+const WHATSAPP_NUMBER = "919518519781";
+document.getElementById("year").textContent = new Date().getFullYear();
+const T = {
+en: {
+navFlowers:"Flowers",navAbout:"About",navBuyers:"Who We Supply",navContact:"Contact",
+heroTitle:"Fresh flowers.<br>Reliable wholesale.",heroDesc:"Your wholesale flower sourcing partner for retailers, florists, decorators, temples and event businesses across Nagpur.",
+heroCta:"Enquire for Bulk Orders ↗",heroExplore:"Explore Flowers",flowersTitle:"Flowers for every occasion and customer.",
+flowersDesc:"Ask us for today's availability, grade, bundle size and wholesale quotation.",
+aboutTitle:"Closer sourcing. Careful handling. Dependable supply.",aboutDesc:"We are building a flower distribution network connecting growers with wholesale buyers in Nagpur.",
+buyersTitle:"Built for wholesale buyers.",ratesTitle:"Need today's wholesale flower rates?",contactTitle:"Let's plan your next order.",
+submitBtn:"Send WhatsApp Enquiry ↗"
+},
+mr: {
+navFlowers:"फुले",navAbout:"आमच्याबद्दल",navBuyers:"आमचे ग्राहक",navContact:"संपर्क",
+heroTitle:"ताजी फुले.<br>विश्वासार्ह घाऊक पुरवठा.",heroDesc:"नागपूरमधील फुलविक्रेते, फ्लोरिस्ट, डेकोरेटर्स, मंदिरे आणि कार्यक्रमांसाठी घाऊक फुलांचा पुरवठा.",
+heroCta:"घाऊक ऑर्डरसाठी चौकशी करा ↗",heroExplore:"फुलांची श्रेणी पाहा",flowersTitle:"प्रत्येक प्रसंगासाठी ताजी फुले.",
+flowersDesc:"आजची उपलब्धता, दर्जा, बंडलचा आकार आणि घाऊक दर जाणून घेण्यासाठी संपर्क करा.",
+aboutTitle:"शेतकऱ्यांकडून थेट खरेदी. काळजीपूर्वक हाताळणी. विश्वासार्ह पुरवठा.",aboutDesc:"नागपूरमधील घाऊक ग्राहकांना फूल उत्पादकांशी जोडणारे वितरण जाळे आम्ही उभारत आहोत.",
+buyersTitle:"घाऊक ग्राहकांसाठी खास.",ratesTitle:"आजचे घाऊक फुलांचे दर हवे आहेत?",contactTitle:"तुमची पुढील ऑर्डर ठरवूया.",
+submitBtn:"WhatsApp वर चौकशी पाठवा ↗"
+},
+hi: {
+navFlowers:"फूल",navAbout:"हमारे बारे में",navBuyers:"हमारे ग्राहक",navContact:"संपर्क",
+heroTitle:"ताज़े फूल।<br>भरोसेमंद थोक आपूर्ति।",heroDesc:"नागपुर के फूल विक्रेताओं, फ्लोरिस्ट, डेकोरेटर्स, मंदिरों और इवेंट व्यवसायों के लिए थोक फूल आपूर्ति।",
+heroCta:"थोक ऑर्डर के लिए पूछताछ करें ↗",heroExplore:"फूलों की सूची देखें",flowersTitle:"हर अवसर और ग्राहक के लिए फूल।",
+flowersDesc:"आज की उपलब्धता, गुणवत्ता, बंडल का आकार और थोक भाव जानने के लिए संपर्क करें।",
+aboutTitle:"सीधे स्रोत से खरीद। सावधानी से संभालना। भरोसेमंद आपूर्ति।",aboutDesc:"हम नागपुर में फूल उत्पादकों को थोक खरीदारों से जोड़ने वाला वितरण नेटवर्क बना रहे हैं।",
+buyersTitle:"थोक खरीदारों के लिए।",ratesTitle:"आज के थोक फूलों के भाव चाहिए?",contactTitle:"अपना अगला ऑर्डर तय करें।",
+submitBtn:"WhatsApp पर पूछताछ भेजें ↗"
+}
+};
+function setLanguage(lang) {
+  const t = T[lang] || T.en;
+  Object.entries(t).forEach(([id, value]) => {
+    const el = document.getElementById(id);
+    if (el) { if (id === "heroTitle") el.innerHTML = value; else el.textContent = value; }
+  });
+  document.documentElement.lang = lang;
+  localStorage.setItem("nfh-language", lang);
+}
+const selector = document.getElementById("languageSelect");
+selector.addEventListener("change", e => setLanguage(e.target.value));
+const initialLanguage = localStorage.getItem("nfh-language") || "en";
+selector.value = initialLanguage;
+setLanguage(initialLanguage);
+
+document.getElementById("enquiry").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  const lang = selector.value;
+  const labels = {
+    en:["Wholesale flower enquiry","Name","Business","Flowers","Quantity","Details"],
+    mr:["घाऊक फुलांची चौकशी","नाव","व्यवसाय","फुले","प्रमाण","तपशील"],
+    hi:["थोक फूल पूछताछ","नाम","व्यवसाय","फूल","मात्रा","विवरण"]
+  }[lang];
+  const msg = labels[0] + "\n" + labels[1] + ": " + v("name") +
+    "\n" + labels[2] + ": " + v("type") + "\n" + labels[3] + ": " + v("flower") +
+    "\n" + labels[4] + ": " + v("qty") + "\n" + labels[5] + ": " + v("message");
+  window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(msg), "_blank");
+});
+</script>
+
+</body></html>
